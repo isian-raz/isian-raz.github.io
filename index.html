@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Isian</title>
+  <title>Isian.io</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
   <link type="text/css" rel="stylesheet" href="css/main.css">
@@ -14,7 +14,60 @@
 </head>
 
 <body>
-
+  <header>
+    <div class="navbar-fixed">
+      <nav class="transparent">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="/" class="brand-logo">Isian.io</a>
+            <a href="javascript:void(0)" data-activates="mobile-nav" class="button-collapse">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a href="#home">What We Offer</a>
+              </li>
+              <li>
+                <a href="#about">Past Work</a>
+              </li>
+              <li>
+                <a href="#" class="btn teal accent-4">Talk To Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Side nav -->
+    <ul class="side-nav blue-grey darken-4" id="mobile-nav">
+      <h4 class="white-text center">Isian.io</h4>
+      <li>
+          <a class="divider teal accent-4"></a>
+      </li>
+      <li>
+        <a class="white-text" href="#home">What We Offer</a>
+      </li>
+      <li>
+        <a class="white-text" href="#about">Past Work</a>
+      </li>
+      <li>
+        <a class="white-text" href="#">Talk To Us</a>
+      </li>
+    </ul>
+    <div class="hero">
+      <div class="hero__video">
+        <video src="img/mockup.mp4" autoplay="true" loop="true"></video>
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content container white-text">
+        <h1>We Bring Ideas From Concept To Market</h1>
+        <p>Based in Kuala Lumpur, Malaysia, Isian.io is a full service agency that strives to bring your startup or idea to market.</p>
+      </div>
+    </div>
+  </header>
+  <script>
+    $('.button-collapse').sideNav();
+  </script>
 </body>
 
 </html>

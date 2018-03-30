@@ -8,3 +8,38 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+.hero {
+  height: calc(100vh - 64px);
+}
+
+.hero__video {
+  height: 100vh;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+.hero__overlay {
+  background: #607d8b;
+  height: 100vh;
+  left: 0;
+  opacity: 0.85;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+.hero__content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+}
