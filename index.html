@@ -13,7 +13,7 @@
   <script type="text/javascript" src="js/materialize.min.js"></script>
 </head>
 
-<body>
+<body class="scrollspy">
   <header>
     <div class="navbar-fixed">
       <nav class="transparent">
@@ -25,7 +25,7 @@
             </a>
             <ul class="right hide-on-med-and-down">
               <li>
-                <a href="#home">What We Offer</a>
+                <a href="#offer">What We Offer</a>
               </li>
               <li>
                 <a href="#about">Past Work</a>
@@ -42,10 +42,10 @@
     <ul class="side-nav blue-grey darken-4" id="mobile-nav">
       <h4 class="white-text center">Isian.io</h4>
       <li>
-          <a class="divider teal accent-4"></a>
+        <a class="divider teal accent-4"></a>
       </li>
       <li>
-        <a class="white-text" href="#home">What We Offer</a>
+        <a class="white-text" href="#offer">What We Offer</a>
       </li>
       <li>
         <a class="white-text" href="#about">Past Work</a>
@@ -61,12 +61,77 @@
       <div class="hero__overlay"></div>
       <div class="hero__content container white-text">
         <h1>We Bring Ideas From Concept To Market</h1>
-        <p>Based in Kuala Lumpur, Malaysia, Isian.io is a full service agency that strives to bring your startup or idea to market.</p>
+        <p>Based in Kuala Lumpur, Malaysia, Isian.io is a full service agency that strives to bring your startup or idea to
+          market.
+        </p>
+        <a href="#offer" class="white-text scroll-icon">
+          <i class="material-icons medium">arrow_drop_down_circle</i>
+        </a>
       </div>
     </div>
   </header>
+  <section id="offer" class="container">
+    <div class="center-align">
+      <h3>What We Offer</h3>
+      <p>As a full service agency, we offer a wide variety of services which will take your idea to market. At Isian.io, we
+        take away the hassle of dealing with multiple vendors by doing it all in one location, allowing you to focus on your
+        core product.</p>
+      <div class="row sub-section cards-1">
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="http://via.placeholder.com/400x300" alt="Web Development">
+            </div>
+            <div class="card-title">Web Development</div>
+            <div class="card-content">
+              <p>
+                From personal portfolio websites to full-fledged web applications, we have got you covered. With our team of designers and
+                developers, we make sure your web applications don't just work well, but are visually enticing.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="http://via.placeholder.com/400x300" alt="Web Development">
+            </div>
+            <div class="card-title">Mobile Development</div>
+            <div class="card-content">
+              <p>
+                We specialize in building cross-platform apps at record speeds. Whether it is a standalone app, or one which is integrated
+                with other hardware or cloud services, we are able to tailor a custom solution for your needs!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
   <script>
-    $('.button-collapse').sideNav();
+    $(".button-collapse").sideNav();
+    $(".scrollspy").scrollSpy();
+    const height = $(window).height()
+    const options = [
+      {
+        selector: ".hero__content", offset: 0, callback: function (el) {
+          Materialize.fadeInImage($(el));
+        }
+      },
+      {
+        selector: ".navbar-fixed", offset: height, callback: function () {
+          $("nav").removeClass("transparent");
+          $("nav").addClass("blue-grey");
+        }
+      },
+      {
+        selector: ".cards-1", offset: 0, callback: function (el) {
+          Materialize.fadeInImage($(el));
+        }
+      }
+    ];
+    Materialize.scrollFire(options);
   </script>
 </body>
 
