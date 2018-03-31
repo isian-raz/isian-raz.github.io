@@ -1,3 +1,8 @@
+/* This script handles the Materialize Scrollfire effect:
+ * 1. Hero content fades in when the user lands on the page
+ * 2. Navbar changes color when the user starts scrolling down
+ * 3. Cards and section elements fade in as they first come into view.
+ */
 const height = $(window).height();
 const options = [
   {
@@ -37,7 +42,7 @@ const options = [
     }
   },
   {
-    selector: ".card-panel",
+    selector: ".z-depth-5",
     offset: 0,
     callback: function(el) {
       Materialize.fadeInImage($(el));

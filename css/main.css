@@ -75,15 +75,6 @@ nav.transparent {
   padding-top: 0;
 }
 
-#googlemap {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
 @media only screen and (max-width: 600px) {
   .hero {
     height: calc(100vh - 56px);

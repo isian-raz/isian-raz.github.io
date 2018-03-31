@@ -1,3 +1,12 @@
+<!--
+  TODO:
+  1. Add logo on nav brand.
+  2. Replace Lorem Ipsum text in Past Work with actual description.
+  3. Replace favicon.ico with a nicer image.
+  4. Add search and social meta tags.
+  5. Cover video in hero section can be better too
+     (user sees a per in mobile 🙊).
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -206,24 +215,26 @@
       </div>
       <div class="row">
         <div class="col s12 m6 offset-m3">
-          <div class="card-panel z-depth-5">
-            <div class="input-field">
-              <input type="text" id="name" placeholder="Name">
-              <label for="name">Name</label>
-            </div>
-            <div class="input-field">
-              <input type="email" id="email" placeholder="Email">
-              <label for="email">Email</label>
-            </div>
-            <div class="input-field">
-              <input type="text" id="phone" placeholder="Phone Number">
-              <label for="phone">Phone</label>
-            </div>
-            <div class="input-field">
-              <textarea class="materialize-textarea" id="message" placeholder="Message"></textarea>
-              <label for="message">Message</label>
-            </div>
-            <input type="submit" value="Submit" class="btn blue-grey">
+          <div class="card z-depth-5">
+            <form class="card-content">
+              <div class="input-field">
+                <input type="text" id="name" placeholder="Name" name="name">
+                <label for="name">Name</label>
+              </div>
+              <div class="input-field">
+                <input type="email" id="email" placeholder="Email" name="email">
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field">
+                <input type="text" id="phone" placeholder="Phone Number" name="phone">
+                <label for="phone">Phone</label>
+              </div>
+              <div class="input-field">
+                <textarea class="materialize-textarea" id="message" placeholder="Message" name="message"></textarea>
+                <label for="message">Message</label>
+              </div>
+              <input type="submit" value="Submit" class="btn blue-grey">
+            </form>
           </div>
         </div>
       </div>
@@ -243,6 +254,7 @@
   <script type="text/javascript" src="js/scrollspy.js"></script>
   <script type="text/javascript" src="js/scrollfire.js"></script>
   <script type="text/javascript" src="js/blinker.js"></script>
+  <script type="text/javascript" src="js/form.js"></script>
 </body>
 
 </html>

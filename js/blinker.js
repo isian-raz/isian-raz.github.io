@@ -1,3 +1,4 @@
+// This script handles the blinking scroll button in the hero section.
 function blinker() {
   $(".scroll-icon").fadeOut(1000);
   $(".scroll-icon").fadeIn(1000);
