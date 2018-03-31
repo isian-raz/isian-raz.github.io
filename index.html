@@ -5,8 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <title>Isian.io</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/normalize.min.css">
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
   <link type="text/css" rel="stylesheet" href="css/main.css">
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -28,10 +31,10 @@
                 <a href="#offer">What We Offer</a>
               </li>
               <li>
-                <a href="#about">Past Work</a>
+                <a href="#work">Past Work</a>
               </li>
               <li>
-                <a href="#" class="btn teal accent-4">Talk To Us</a>
+                <a href="#contact" class="btn teal accent-4">Talk To Us</a>
               </li>
             </ul>
           </div>
@@ -48,10 +51,10 @@
         <a class="white-text" href="#offer">What We Offer</a>
       </li>
       <li>
-        <a class="white-text" href="#about">Past Work</a>
+        <a class="white-text" href="#work">Past Work</a>
       </li>
       <li>
-        <a class="white-text" href="#">Talk To Us</a>
+        <a class="white-text" href="#contact">Talk To Us</a>
       </li>
     </ul>
     <div class="hero">
@@ -70,69 +73,176 @@
       </div>
     </div>
   </header>
-  <section id="offer" class="container">
-    <div class="center-align">
-      <h3>What We Offer</h3>
-      <p>As a full service agency, we offer a wide variety of services which will take your idea to market. At Isian.io, we
-        take away the hassle of dealing with multiple vendors by doing it all in one location, allowing you to focus on your
-        core product.</p>
-      <div class="row sub-section cards-1">
-        <div class="col s12 m6">
+  <section id="offer" class="section-boxes center">
+    <div class="row">
+      <div class="col s12 m6 teal accent-4 white-text box">
+        <i class="material-icons medium">desktop_mac</i>
+        <h4>Web Development</h4>
+        <p>From personal portfolio websites to full-fledged web applications, we have got you covered. With our team of designers
+          and developers, we make sure your web applications don't just work well, but are visually enticing.</p>
+      </div>
+      <div class="col s12 m6 blue-grey white-text box">
+        <i class="material-icons medium">phone_iphone</i>
+        <h4>Mobile Development</h4>
+        <p>We specialize in building cross-platform apps at record speeds. Whether it is a standalone app, or one which is integrated
+          with other hardware or cloud services, we are able to tailor a custom solution for your needs!</p>
+      </div>
+    </div>
+  </section>
+  <section id="work" class="container section">
+    <div>
+      <h3 class="center-align">Past Work</h3>
+      <div class="row sub-section cards-2">
+        <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
-              <img src="http://via.placeholder.com/400x300" alt="Web Development">
+              <img src="img/lkim.png" alt="Risikan Harga Ikan">
+              <a class="btn-floating halfway-fab waves-effect waves-light teal accent-4" href="https://itunes.apple.com/my/app/lkim-rhi/id1312734532?mt=8"
+                target="_blank">
+                <i class="material-icons">open_in_browser</i>
+              </a>
             </div>
-            <div class="card-title">Web Development</div>
             <div class="card-content">
+              <div class="card-title">Risikan Harga Ikan</div>
               <p>
-                From personal portfolio websites to full-fledged web applications, we have got you covered. With our team of designers and
-                developers, we make sure your web applications don't just work well, but are visually enticing.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio id labore voluptate?
               </p>
             </div>
           </div>
         </div>
-        <div class="col s12 m6">
+        <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
-              <img src="http://via.placeholder.com/400x300" alt="Web Development">
+              <img src="img/meetthedanes.png" alt="Meet The Danes">
+              <a class="btn-floating halfway-fab waves-effect waves-light teal accent-4" href="https://www.meetthedanes.com/" target="_blank">
+                <i class="material-icons">open_in_browser</i>
+              </a>
             </div>
-            <div class="card-title">Mobile Development</div>
             <div class="card-content">
+              <div class="card-title">Meet The Danes</div>
               <p>
-                We specialize in building cross-platform apps at record speeds. Whether it is a standalone app, or one which is integrated
-                with other hardware or cloud services, we are able to tailor a custom solution for your needs!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut possimus mollitia rem.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/thinkpr.png" alt="Think PR">
+              <a class="btn-floating halfway-fab waves-effect waves-light teal accent-4" href="http://www.thinkpr.dk/" target="_blank">
+                <i class="material-icons">open_in_browser</i>
+              </a>
+            </div>
+            <div class="card-content">
+              <div class="card-title">ThinkPR</div>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, perferendis laborum. Ex?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row cards-3">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/dompet.png" alt="Dompet">
+              <a class="btn-floating halfway-fab waves-effect waves-light teal accent-4" href="http://www.dom-pet.co/" target="_blank">
+                <i class="material-icons">open_in_browser</i>
+              </a>
+            </div>
+            <div class="card-content">
+              <div class="card-title">Dompet</div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quo officia fuga?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/hoojah.png" alt="Hoojah">
+              <a class="btn-floating halfway-fab waves-effect waves-light teal accent-4" href="https://hoojah.my/" target="_blank">
+                <i class="material-icons">open_in_browser</i>
+              </a>
+            </div>
+            <div class="card-content">
+              <div class="card-title">Hoojah</div>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis aliquam nam nemo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/nowthatsdelicious.png" alt="Now That's Delicious">
+              <a class="btn-floating halfway-fab waves-effect waves-light teal accent-4" href="https://now-thats-delicious-osqsuueoze.now.sh/"
+                target="_blank">
+                <i class="material-icons">open_in_browser</i>
+              </a>
+            </div>
+            <div class="card-content">
+              <div class="card-title">Now That's Delicious</div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam esse eos magni?
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </section>
-  <script>
-    $(".button-collapse").sideNav();
-    $(".scrollspy").scrollSpy();
-    const height = $(window).height()
-    const options = [
-      {
-        selector: ".hero__content", offset: 0, callback: function (el) {
-          Materialize.fadeInImage($(el));
-        }
-      },
-      {
-        selector: ".navbar-fixed", offset: height, callback: function () {
-          $("nav").removeClass("transparent");
-          $("nav").addClass("blue-grey");
-        }
-      },
-      {
-        selector: ".cards-1", offset: 0, callback: function (el) {
-          Materialize.fadeInImage($(el));
-        }
-      }
-    ];
-    Materialize.scrollFire(options);
-  </script>
+  <section id="contact" class="section teal accent-4">
+    <div class="container">
+      <div class="center-align">
+        <h3>Talk To Us</h3>
+        <p>
+          Get a Free Consultation
+        </p>
+      </div>
+      <div class="row">
+        <div class="col s12 m6 offset-m3">
+          <div class="card-panel z-depth-5">
+            <div class="input-field">
+              <input type="text" id="name" placeholder="Name">
+              <label for="name">Name</label>
+            </div>
+            <div class="input-field">
+              <input type="email" id="email" placeholder="Email">
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="phone" placeholder="Phone Number">
+              <label for="phone">Phone</label>
+            </div>
+            <div class="input-field">
+              <textarea class="materialize-textarea" id="message" placeholder="Message"></textarea>
+              <label for="message">Message</label>
+            </div>
+            <input type="submit" value="Submit" class="btn blue-grey">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="page-footer blue-grey">
+    <div class="footer-copyright blue-grey">
+      <div class="container">
+        Isian.io © 2018
+        <a class="grey-text text-lighten-4 right" href="/">
+          <i class="material-icons left">keyboard_arrow_up</i> Back To Top
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/sidenav.js"></script>
+  <script type="text/javascript" src="js/scrollspy.js"></script>
+  <script type="text/javascript" src="js/scrollfire.js"></script>
+  <script type="text/javascript" src="js/blinker.js"></script>
 </body>
 
 </html>

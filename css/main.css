@@ -9,12 +9,12 @@ html {
   box-sizing: inherit;
 }
 
-section {
-  padding: 50px 0;
+.section {
+  padding-top: 50px;
 }
 
 .sub-section {
-  margin: 50px 0;
+  margin-top: 50px;
 }
 
 nav.transparent {
@@ -58,7 +58,38 @@ nav.transparent {
 
 .scroll-icon {
   position: absolute;
-  bottom: 5vh;
+  bottom: 5pt;
   left: calc(50vw - 28px);
   opacity: 0.5;
+}
+
+.box {
+  padding: 40px 10px !important;
+}
+
+.box h4 {
+  padding-bottom: 30px;
+}
+
+.page-footer {
+  padding-top: 0;
+}
+
+#googlemap {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    height: calc(100vh - 56px);
+  }
+
+  .scroll-icon {
+    display: none;
+  }
 }
