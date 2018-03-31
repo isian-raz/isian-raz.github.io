@@ -58,7 +58,7 @@ nav.transparent {
 
 .scroll-icon {
   position: absolute;
-  bottom: 5pt;
+  bottom: 10pt;
   left: calc(50vw - 28px);
   opacity: 0.5;
 }

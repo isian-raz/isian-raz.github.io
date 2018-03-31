@@ -2,6 +2,10 @@
 
 Landing page for Isian.io
 
+## Setting Up
+
+This project is set up as simple static pages with no pre-processors or transpilers. Simply open `index.html` and you're good to go. 👍
+
 ## Project Structure
 
 ```
@@ -27,8 +31,10 @@ These may come as a surprise: 🙊
 * `fonts`: Where we store fonts - Noto Sans is required for Materialize CSS.
 * `img`: Where we store images (and that one video for the hero section) - make sure they're optimized for page loads.
 
-Only jQuery and Materialize Icons is delivered through CDN for now.
+We prefer to keep copy of vendors' assets instead of CDN for performance and reliability issues.
 
 ## Materialize CSS
 
 We use a custom version of Materialize CSS v0.100.2 (with fonts changed to Noto Sans in the vendors' source).
+
+Refer documentation [here](http://archives.materializecss.com/0.100.2/).

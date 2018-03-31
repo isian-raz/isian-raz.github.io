@@ -14,7 +14,7 @@ const options = [
   },
   {
     selector: ".navbar-fixed",
-    offset: height,
+    offset: height * 2,
     callback: function() {
       $("nav").removeClass("transparent");
       $("nav").addClass("blue-grey");
