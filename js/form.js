@@ -30,7 +30,7 @@ document.querySelector("form").addEventListener("submit", e => {
 function renderThankYou(card) {
   const thankYouDOM = `
     <div class="card-image">
-      <img src="img/thanks.jpg" alt="Thank You">
+      <img src="img/thanks.png" alt="Thank You">
     </div>
     <div class="card-content">
       <div class="card-title">
