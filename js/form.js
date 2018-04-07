@@ -7,16 +7,16 @@
  */
 document.querySelector("form").addEventListener("submit", e => {
   e.preventDefault();
-  const formData = new FormData(e.target);
-  const card = document.querySelector(".z-depth-5");
-  const form = e.target;
+  var formData = new FormData(e.target);
+  var card = document.querySelector(".z-depth-5");
+  var form = e.target;
 
   // Set button to disable on submit.
   disableForm(form);
 
   setTimeout(function() {
     // Just print out the JSON for now.
-    const object = {};
+    var object = {};
     formData.forEach(function(value, key) {
       object[key] = value;
     });
@@ -28,7 +28,7 @@ document.querySelector("form").addEventListener("submit", e => {
 });
 
 function renderThankYou(card) {
-  const thankYouDOM = `
+  var thankYouDOM = `
     <div class="card-image">
       <img src="img/thanks.png" alt="Thank You">
     </div>
@@ -46,6 +46,6 @@ function renderThankYou(card) {
 }
 
 function disableForm(form) {
-  const button = form.children[form.children.length - 1];
+  var button = form.children[form.children.length - 1];
   button.classList.add("disabled");
 }

@@ -3,8 +3,8 @@
  * 2. Navbar changes color when the user starts scrolling down
  * 3. Cards and section elements fade in as they first come into view.
  */
-const height = $(window).height();
-const options = [
+var height = $(window).height();
+var options = [
   {
     selector: ".hero__content",
     offset: 0,
