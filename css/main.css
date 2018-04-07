@@ -26,6 +26,15 @@ nav.transparent {
   box-shadow: none;
 }
 
+.isian-logo {
+  display:flex;
+  align-items:center;
+}
+
+.isian-logo img {
+  margin-right: 10px;
+}
+
 .hero {
   height: calc(100vh - 64px);
 }
