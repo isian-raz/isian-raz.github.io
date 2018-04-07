@@ -1,12 +1,3 @@
-<!--
-  TODO:
-  1. Add logo on nav brand.
-  2. Replace Lorem Ipsum text in Past Work with actual description.
-  3. Replace favicon.ico with a nicer image.
-  4. Add search and social meta tags.
-  5. Cover video in hero section can be better too
-     (user sees a pen in mobile 🙊).
--->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,104 +8,12 @@
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <title>Isian.io</title>
-  <style>
-    body {
-      opacity: 0;
-    }
-  </style>
-  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="css/material-icons.css">
-  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="css/normalize.min.css">
-  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="css/materialize.min.css">
-  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="css/main.css">
-  <noscript>
-    <link rel="stylesheet" href="css/material-icons.css">
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/materialize.min.css">
-    <link rel="stylesheet" href="css/main.css">
-  </noscript>
-  <script defer type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-  <script defer type="text/javascript" src="js/materialize.min.js"></script>
-  <script>
-    /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
-    (function (w) {
-      "use strict";
-      /* exported loadCSS */
-      var loadCSS = function (href, before, media) {
-        // Arguments explained:
-        // `href` [REQUIRED] is the URL for your CSS file.
-        // `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
-        // By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
-        // `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
-        var doc = w.document;
-        var ss = doc.createElement("link");
-        var ref;
-        if (before) {
-          ref = before;
-        }
-        else {
-          var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
-          ref = refs[refs.length - 1];
-        }
-
-        var sheets = doc.styleSheets;
-        ss.rel = "stylesheet";
-        ss.href = href;
-        // temporarily set media to something inapplicable to ensure it'll fetch without blocking render
-        ss.media = "only x";
-
-        // wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
-        function ready(cb) {
-          if (doc.body) {
-            return cb();
-          }
-          setTimeout(function () {
-            ready(cb);
-          });
-        }
-        // Inject link
-        // Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
-        // Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
-        ready(function () {
-          ref.parentNode.insertBefore(ss, (before ? ref : ref.nextSibling));
-        });
-        // A method (exposed on return object for external use) that mimics onload by polling document.styleSheets until it includes the new sheet.
-        var onloadcssdefined = function (cb) {
-          var resolvedHref = ss.href;
-          var i = sheets.length;
-          while (i--) {
-            if (sheets[i].href === resolvedHref) {
-              return cb();
-            }
-          }
-          setTimeout(function () {
-            onloadcssdefined(cb);
-          });
-        };
-
-        function loadCB() {
-          if (ss.addEventListener) {
-            ss.removeEventListener("load", loadCB);
-          }
-          ss.media = media || "all";
-        }
-
-        // once loaded, set link's media back to `all` so that the stylesheet applies once it loads
-        if (ss.addEventListener) {
-          ss.addEventListener("load", loadCB);
-        }
-        ss.onloadcssdefined = onloadcssdefined;
-        onloadcssdefined(loadCB);
-        return ss;
-      };
-      // commonjs
-      if (typeof exports !== "undefined") {
-        exports.loadCSS = loadCSS;
-      }
-      else {
-        w.loadCSS = loadCSS;
-      }
-    }(typeof global !== "undefined" ? global : this));
-  </script>
+  <link rel="stylesheet" href="css/material-icons.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
 </head>
 
 <body class="scrollspy">
@@ -125,8 +24,7 @@
           <div class="nav-wrapper">
             <a href="/" class="brand-logo">
               <div class="isian-logo">
-                <img src="img/logo.png" alt="Isian.io Logo">
-                Isian.io
+                <img src="img/logo.png" alt="Isian.io Logo"> Isian.io
               </div>
             </a>
             <a href="javascript:void(0)" data-activates="mobile-nav" class="button-collapse">
@@ -240,8 +138,7 @@
               <span class="card-title">Meet The Danes
                 <i class="material-icons right">close</i>
               </span>
-              <p>A Danish based tourist platform where guests can dine with locals while learning about their culture and
-                lifestyles.
+              <p>A Danish based tourist platform where guests can dine with locals while learning about their culture and lifestyles.
               </p>
             </div>
           </div>
@@ -310,7 +207,8 @@
               <span class="card-title">Hoojah
                 <i class="material-icons right">close</i>
               </span>
-              <p>A platform where Malaysia’s brilliant minds come to debate about current issues and vote for what they feel is important.</p>
+              <p>A platform where Malaysia’s brilliant minds come to debate about current issues and vote for what they feel
+                is important.</p>
             </div>
           </div>
         </div>
@@ -333,7 +231,8 @@
               <span class="card-title">NTD
                 <i class="material-icons right">close</i>
               </span>
-              <p>A restaurant application where users can search, locate, review and curate their favourite restaurants from around the world.</p>
+              <p>A restaurant application where users can search, locate, review and curate their favourite restaurants from
+                around the world.</p>
             </div>
           </div>
         </div>
@@ -353,12 +252,12 @@
           <div class="card z-depth-5">
             <form class="card-content">
               <div class="input-field">
-                <input type="text" id="name" placeholder="Name" name="name">
-                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Name" name="name" class="validate" required>
+                <label for="name" data-error="Name is required">Name</label>
               </div>
               <div class="input-field">
-                <input type="email" id="email" placeholder="Email" name="email">
-                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email" name="email" class="validate" required>
+                <label for="email" data-error="Valid email is required">Email</label>
               </div>
               <div class="input-field">
                 <input type="text" id="phone" placeholder="Phone Number" name="phone">
@@ -385,11 +284,11 @@
       </div>
     </div>
   </footer>
-  <script defer type="text/javascript" src="js/sidenav.js"></script>
-  <script defer type="text/javascript" src="js/scrollspy.js"></script>
-  <script defer type="text/javascript" src="js/scrollfire.js"></script>
-  <script defer type="text/javascript" src="js/blinker.js"></script>
-  <script defer type="text/javascript" src="js/form.js"></script>
+  <script type="text/javascript" src="js/sidenav.js"></script>
+  <script type="text/javascript" src="js/scrollspy.js"></script>
+  <script type="text/javascript" src="js/scrollfire.js"></script>
+  <script type="text/javascript" src="js/blinker.js"></script>
+  <script type="text/javascript" src="js/form.js"></script>
 </body>
 
 </html>
