@@ -68,6 +68,10 @@ nav.transparent {
   opacity: 0.5;
 }
 
+.section-boxes .row {
+  margin-bottom: 0;
+}
+
 .box {
   padding: 40px 10px !important;
 }
@@ -78,6 +82,10 @@ nav.transparent {
 
 .page-footer {
   padding-top: 0;
+}
+
+.image-rhi {
+  border-bottom: 1pt solid #bbb;
 }
 
 @media only screen and (max-width: 600px) {
