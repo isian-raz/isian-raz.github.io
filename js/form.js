@@ -1,11 +1,5 @@
-/*
- * This script handles the submission of the "Talk To Us" form.
- * TODO:
- * 1. Build a back end service to handle form submission.
- * 2. Update apiURL value.
- */
-
-var apiURL = "https://thejsway-server.herokuapp.com/animals";
+// This script handles the submission of form to the Email API.
+var apiURL = "https://isian-email-api.herokuapp.com/email";
 
 document.querySelector("form").addEventListener("submit", e => {
   e.preventDefault();
@@ -13,13 +7,20 @@ document.querySelector("form").addEventListener("submit", e => {
   var card = document.querySelector(".z-depth-5");
   var form = e.target;
 
-  // Set button to disable on submit.
+  const json = {};
+  formData.forEach(function(value, key) {
+    json[key] = value;
+  });
+
   disableForm(form);
 
-  // setTimeout(mockForm, 2000, card, null);
   fetch(apiURL, {
     method: "POST",
-    body: formData
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(json)
   })
     .then(response => {
       if (response.status === 200) return renderThankYou(card);
