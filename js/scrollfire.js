@@ -12,14 +12,14 @@ var options = [
       Materialize.fadeInImage($(el));
     }
   },
-  {
-    selector: ".navbar-fixed",
-    offset: height * 2,
-    callback: function() {
-      $("nav").removeClass("transparent");
-      $("nav").addClass("blue-grey");
-    }
-  },
+  // {
+  //   selector: ".navbar-fixed",
+  //   offset: height * 2,
+  //   callback: function() {
+  //     $("nav").removeClass("transparent");
+  //     $("nav").addClass("blue-grey");
+  //   }
+  // },
   {
     selector: ".cards-1",
     offset: 0,
@@ -51,3 +51,15 @@ var options = [
 ];
 
 Materialize.scrollFire(options);
+
+// Custom navbar fade in effect
+$(document).scroll(function() {
+  if($(window).scrollTop() < 200){
+    $("nav").removeClass("nav-fade-in");
+    $("nav").addClass("nav-fade-out");
+  }
+  else if($(window).scrollTop() > 200){
+    $("nav").removeClass("nav-fade-out");
+    $("nav").addClass("nav-fade-in");
+  }
+});
