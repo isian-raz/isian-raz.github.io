@@ -9,25 +9,20 @@ html {
   box-sizing: inherit;
 }
 
-.section {
-  padding-top: 50px;
+.box {
+  padding: 40px 10px !important;
 }
 
-.sub-section {
-  margin-top: 50px;
+.box h4 {
+  padding-bottom: 30px;
 }
 
-nav.transparent {
-  box-shadow: none;
+.card-reveal .btn {
+  width: 100%;
 }
 
-.isian-logo {
-  display:flex;
-  align-items:center;
-}
-
-.isian-logo img {
-  margin-right: 10px;
+.card-image img {
+  border: 1px solid #bbb;
 }
 
 .hero {
@@ -65,31 +60,18 @@ nav.transparent {
   z-index: 1;
 }
 
-.scroll-icon {
-  position: absolute;
-  bottom: 10pt;
-  left: calc(50vw - 28px);
-  opacity: 0.5;
-}
-
-.section-boxes .row {
-  margin-bottom: 0;
-}
-
-.box {
-  padding: 40px 10px !important;
-}
-
-.box h4 {
-  padding-bottom: 30px;
-}
-
-.page-footer {
-  padding-top: 0;
-}
-
 .image-rhi {
   border-bottom: 1pt solid #bbb;
+}
+
+.isian-logo {
+  display:flex;
+  align-items:center;
+}
+
+.isian-logo img {
+  height: 43px;
+  margin-right: 10px;
 }
 
 .nav-fade-in {
@@ -106,6 +88,29 @@ nav.transparent {
   box-shadow: none;
   -webkit-transition: background-color 0.5s ease, box-shadow 0.5s ease;
   transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.page-footer {
+  padding-top: 0;
+}
+
+.section {
+  padding-top: 50px;
+}
+
+.section-boxes .row {
+  margin-bottom: 0;
+}
+
+.scroll-icon {
+  position: absolute;
+  bottom: 10pt;
+  left: calc(50vw - 28px);
+  opacity: 0.5;
+}
+
+.sub-section {
+  margin-top: 50px;
 }
 
 @media only screen and (max-width: 600px) {
